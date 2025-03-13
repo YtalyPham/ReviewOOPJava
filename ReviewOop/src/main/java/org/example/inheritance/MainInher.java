@@ -10,10 +10,35 @@ public class MainInher {
        Dog d = new Dog();
        NhapDog(d);
        XuatDog(d);
+       Mosquito m= new Mosquito();
+       NhapMosquito(m);
+       XuatMosquito(m);
 
     }
+    public static Mosquito NhapMosquito(Mosquito m){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("===Mosquito===");
+        System.out.println("Input Id: ");
+        m.setId(sc.nextInt());
+        sc.nextLine();
+        System.out.println("Input name: ");
+        m.setName(sc.nextLine());
+        System.out.println("Input food: ");
+        m.setFood(sc.nextLine());
+        System.out.println("Input environment: ");
+        m.setEnvironment(sc.nextLine());
+        return m;
+    }
+    public static void XuatMosquito(Mosquito m){
+        System.out.println("\nInput Id: "+m.getId());
+        System.out.println("\nInput name: "+m.getName());
+        System.out.println("\nInput environment: "+m.getEnvironment());
+        m.Bite();
+    }
+
     public static Dog NhapDog(Dog d){
         Scanner sc = new Scanner(System.in);
+        System.out.println("===Dog===");
         System.out.println("Input Id: ");
         d.setId(sc.nextInt());
         sc.nextLine();
