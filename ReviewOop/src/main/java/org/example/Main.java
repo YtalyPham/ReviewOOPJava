@@ -6,6 +6,8 @@ import java.time.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
+
+import org.example.abstraction.MainAbs;
 import org.example.encapsulation.Entity.NhanVien;
 import org.example.encapsulation.MainEncap;
 import org.example.inheritance.MainInher;
@@ -22,8 +24,11 @@ public class Main {
 //        MainInher I = new MainInher();
 //        I.MainInheritance();
         //Run Polymorphism
-        MainPoly p= new MainPoly();
-        p.MainPolymorphism();
+//        MainPoly p= new MainPoly();
+//        p.MainPolymorphism();
+        //Run Abstraction
+        MainAbs a= new MainAbs();
+        a.mainAbstraction();
 
 
 
